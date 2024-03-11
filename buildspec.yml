@@ -14,3 +14,9 @@ phases:
       # Copy files from the cloned repository to S3 bucket
       - aws s3 cp app1 s3://code-app3/ --recursive
       - echo "Files copied to S3"
+  artifacts:
+    files:
+      - '**/*'
+    base-directory: base_dir
+    name: build-artifact-name
+    discard-paths: no
