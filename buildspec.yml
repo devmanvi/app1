@@ -12,5 +12,5 @@ phases:
       # Clone the GitHub repository
       - git clone https://github.com/devmanvi/app1.git
       # Copy files from the cloned repository to S3 bucket
-      - aws s3 cp app1 s3://code-app3/ --recursive
+      - aws s3 cp app1 s3://code-app3/app1/ --recursive
       - echo "Files copied to S3"
